@@ -11,7 +11,7 @@ namespace Skyline.DataMiner.ConnectorAPI.Generic
 		/// <summary>
 		/// Gets the known message types for serialization and deserialization.
 		/// </summary>
-		public static List<Type> KnownTypes { get; } = new List<Type>
+		public static IReadOnlyList<Type> KnownTypes { get; } = new[]
 		{
 			typeof(RawDataMessage),
 		};
