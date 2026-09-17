@@ -11,8 +11,14 @@ on:
 jobs:
   CICD:
     name: CICD
-    uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/Master Workflow.yml@main
+    uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/Internal NuGet Solution Master Workflow.yml@main
     with:
-      sonarcloud-project-name: SkylineCommunications_SLC-S-Generic-ConnectorAPI
+      referenceName: ${{ github.ref_name }}
+      runNumber: ${{ github.run_number }}
+      referenceType: ${{ github.ref_type }}
+      repository: ${{ github.repository }}
+      owner: ${{ github.repository_owner }}
+      sonarCloudProjectName: SkylineCommunications_SLC-S-Generic-ConnectorAPI
     secrets:
-      NUGET_API_KEY: ${{ secrets.NUGETAPIKEY_GITHUB  }}
+      sonarCloudToken: ${{ secrets.SONAR_TOKEN }}
+      nugetApiKey: ${{ secrets.NUGETAPIKEY_GITHUB  }}
