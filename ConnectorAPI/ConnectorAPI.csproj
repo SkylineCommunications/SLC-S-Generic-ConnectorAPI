@@ -14,12 +14,17 @@
     <RepositoryUrl>https://github.com/SkylineCommunications/SLC-S-Generic-ConnectorAPI</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<PackageIcon>Icon.png</PackageIcon>
     <Description>Connector API (Inter-App Calls/Messages) for generic DataMiner integrations exposing a single raw data message.</Description>
     <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\README.md" Pack="true" PackagePath="" />
+	<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+	<None Include="nuget\Icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
