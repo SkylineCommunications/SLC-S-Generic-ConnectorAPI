@@ -14,6 +14,7 @@ namespace Skyline.DataMiner.ConnectorAPI.Generic
 		public static IReadOnlyList<Type> KnownTypes { get; } = Array.AsReadOnly(new[]
 		{
 			typeof(RawDataMessage),
+			typeof(RawDataMessageResult),
 		});
 	}
 }
