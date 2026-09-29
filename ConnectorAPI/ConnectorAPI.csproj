@@ -29,6 +29,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net462" Version="1.0.3" PrivateAssets="All" />
-    <PackageReference Include="Skyline.DataMiner.Core.InterAppCalls.Common" Version="1.0.0.2" />
+    <PackageReference Include="Skyline.DataMiner.Core.InterAppCalls.Common" Version="1.1.1.1" />
   </ItemGroup>
 </Project>
